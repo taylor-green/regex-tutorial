@@ -28,6 +28,21 @@ Matching Email-
 
 ### Anchors
 
+The anchor is what starts and ends the regular expression. In the matching email code,
+
+/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/,
+
+the anchors are the ^ and the $. This code specifically is saying that we are looking for something that starts with
+
+^([a-z0-9_\.-]+)
+
+we will define what everything inside the parentheses later in this tutorial, but what the anchor means is that if we are to find a match it has follow those initial guidelines. It also has to end with
+
+.([a-z\.]{2,6})$.
+
+So, it must start and end with the given parameters within the code. If it does not, then it is not a match.
+
+
 ### Quantifiers
 
 ### OR Operator
