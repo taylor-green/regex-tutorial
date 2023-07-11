@@ -45,7 +45,25 @@ So, it must start and end with the given parameters within the code. If it does 
 
 ### Quantifiers
 
+A quantifier is used to determine how many times a specific character or group of characters needs to be present in order to have a match. For instance, if we used the following code in our regex, xyz+ then this will match any string xy followed by at least one z. So, if we look at our code for matching the email:
+
+([a-z0-9_\.-]+)
+
+this will match any string that contains a-z, 0-9, _, ., or -. The quantifier + means that it has to contain at least one of this in order to have a match.
+
 ### OR Operator
+
+It is not present in the code for the given matching email code, but in order to talk about the OR Operator, we will look at the following code for matching a hex code.
+
+/^#?([a-f0-9]{6}|[a-f0-9]{3})$/
+
+ This is a regex for matching a hex code that uses the OR Operator. What this will do is it will match where it starts with the # and that has to come first followed by one of the following:
+
+[a-f0-9]{6} which will match a 6 character long string that contains a combination of a-f letters and 0-9 numbers.
+
+| OR Operator
+
+[a-f0-9]{3} it will match a 3 character long string that contains a combination of a-f letters and 0-9 numbers.
 
 ### Character Classes
 
