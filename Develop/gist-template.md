@@ -67,7 +67,19 @@ It is not present in the code for the given matching email code, but in order to
 
 ### Character Classes
 
+\d is present in the given matching email code and what it will match a single letter character, a-z, after the @ sign in the email address. Basically ensuring that a letter is matched after the @ in the email and not a number or special character.
+
 ### Flags
+
+A regex flag is not used in the matching email code that is being used for this tutorial. A regular expression typically comes in the form:
+
+/regex/
+
+Where the slashes denote where the regular expresssion starts and ends. A flag can be used after the slash to give more guidelines for our matching. The flags are:
+
+g which stands for "global" which will allow for matching all the instances within a string that follow the matching guidelines set in the regular expression.
+m which stands for "multiline" which will search line by line rather than searching through a string as a whole.
+i which stands for "insensitive" will make the regular expression case-insensitive, so capitals and lower-case letters will not deter the matching.
 
 ### Grouping and Capturing
 
