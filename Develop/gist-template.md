@@ -75,7 +75,7 @@ A regex flag is not used in the matching email code that is being used for this 
 
 /regex/
 
-Where the slashes denote where the regular expresssion starts and ends. A flag can be used after the slash to give more guidelines for our matching. The flags are:
+Where the slashes denote where the regular expression starts and ends. A flag can be used after the slash to give more guidelines for our matching. The flags are:
 
 g which stands for "global" which will allow for matching all the instances within a string that follow the matching guidelines set in the regular expression.
 m which stands for "multiline" which will search line by line rather than searching through a string as a whole.
@@ -83,11 +83,37 @@ i which stands for "insensitive" will make the regular expression case-insensiti
 
 ### Grouping and Capturing
 
+Continuing with the code for matching an email:
+
+/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+
+We can talk about grouping and capturing.
+
+([a-z0-9_\.-]+) is the first group that appears in our regex. This must be true before moving on to "match" the next part of the code. ([\da-z\.-]+) is the second group that appears in our regex. ([a-z\.]{2,6}) is the third group that appears in our regex.
+
+When matching, we have to make sure we are following the guidelines of the group before moving on to the next group.
+
 ### Bracket Expressions
+
+Continuing with the code for matching an email:
+
+/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+
+We can talk about grouping and capturing.
+
+[a-z0-9_\.-]
+
+The guidelines for matching the group. For this code snippet, it can contain letters a-z, numbers 0-9, an underscore, hyphen, or period.
+
+The period is an escaped character, so it required the backslash in order to be able to be matched.
 
 ### Greedy and Lazy Match
 
+In the given code for matching an email, there isn't a greedy or lazy match included.
+
 ### Boundaries
+
+If in a string, we are looking for for specific words. Boundaries are not used in the given matching an email code.
 
 ### Back-references
 
