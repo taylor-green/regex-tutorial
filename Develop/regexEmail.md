@@ -117,8 +117,17 @@ If in a string, we are looking for for specific words. Boundaries are not used i
 
 ### Back-references
 
+Back-references are not included in the given code.
+
 ### Look-ahead and Look-behind
+
+If using a look-ahead or look-behind, then it has to match in a certain order. It is not being used in the given matching an email code.
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+This tutorial was created by Taylor Green
+
+Contact:
+
+Email: taylor.green2804@gmail.com
+GitHub: taylor-green
